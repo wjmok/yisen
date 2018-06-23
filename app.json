@@ -29,8 +29,8 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "image/footer/footer-yu.png",
-        "selectedIconPath": "image/footer/footer-yu-is.png"
+        "iconPath": "image/footer/home.png",
+        "selectedIconPath": "image/footer/home-active.png"
       },
       {
         "pagePath": "pages/product/product",
