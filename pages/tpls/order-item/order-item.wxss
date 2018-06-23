@@ -1,0 +1,10 @@
+.order-box-item-info{width: 740rpx;height: 205rpx;display: flex;justify-content: space-around;box-shadow: 0rpx 0rpx 6rpx 0rpx rgba(170, 170, 170, 1);margin:0 auto;margin-top: 20rpx;}
+.order-box-item-info .order-box-item-info-img{width: 350rpx;height: 205rpx;background: #3e3c3d;border-bottom:1rpx solid #3e3c3d;position: relative}
+.order-box-item-info .order-box-item-info-img .card-id{position: absolute;left: 30rpx;top:50rpx;font-size: 20rpx;color: #ff9d00}
+.order-box-item-info .order-box-item-info-img image{width: 350rpx;height: 205rpx;vertical-align: middle;border-radius: 15rpx;}
+.order-box-item-info .order-box-item-info-box{width: 390rpx;height: 205rpx;border:1rpx solid #bbb;border-left: none;}
+.order-box-item-info .order-box-item-info-box .order-box-item-info-box-title{width: 390rpx;font-size: 27rpx;text-align: center;margin: 23rpx 0;-webkit-line-clamp:1}
+.order-box-item-info .order-box-item-info-box .order-box-item-info-box-price{width: 390rpx;font-size: 29rpx;text-align: center;color: #ff9d00}
+.order-box-item-info .order-box-item-info-box .order-box-item-info-box-price text{font-size: 39rpx;color: #3e3c3d}
+.order-box-item-info .order-box-item-info-box .order-box-item-info-box-tool{width: 390rpx;display: flex;justify-content: space-around;}
+.order-box-item-info .order-box-item-info-box .order-box-item-info-box-tool .tool-btn{width: 140rpx;height: 55rpx;color: #fff;text-align: center;line-height: 55rpx;background: #ff9d00;font-size: 27rpx;border-radius: 10rpx;}

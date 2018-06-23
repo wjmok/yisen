@@ -1,0 +1,44 @@
+<view class="container">
+  <view style='width:750rpx;border-top:4rpx solid #fa9d26'></view>
+  <view style="width:100%;height:80rpx;display:flex;align-items:center;border-bottom:2px solid #E5E5E5;color:#fa9d26" >
+    <view style="width:49%;border-right:1px solid #E5E5E5;text-align:center;font-size:16px;">我的团队
+    </view>
+    <view style="width:50%;text-align:center;font-size:16px;">
+    团队订单
+    </view>
+  </view>
+  <view class='distribution-item'>
+    姓名：{{distriData.name}}
+  </view>
+  <view class='distribution-item'>
+    性别：{{distriData.sex == 1?'男':'女'}}
+  </view>
+  <view class='distribution-item'>
+    工号：{{distriData.memberID}}
+  </view>
+  <view class='distribution-item'>
+    手机号：{{distriData.phone}}
+  </view>
+  <view class='distribution-item'>
+    所属机场：{{distriData.department}}
+  </view>
+  <view class='distribution-item'>
+    <view>小程序二维码：</view>
+    <view style="margin:0 auto">
+      <image style="width:300rpx;height:300rpx;margin:0 auto;margin-bottom:20px;display:block;" src="{{distriData.QRcode.url}}"></image>
+    </view>
+    
+  </view>
+  <view class='distribution-item'>
+    <view>公众号二维码：</view>
+    <view style=";margin:0 auto">
+      <image style="width:300rpx;height:300rpx;margin:0 auto;margin-bottom:20px;display:block;" src="{{distriData.wxQRcode.url}}"></image>
+    </view>
+
+    
+  </view>
+
+
+  <button style="margin-top:50px" bindtap="loginOut">退出</button>
+
+</view>

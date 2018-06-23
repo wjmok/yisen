@@ -1,0 +1,16 @@
+<view class="container">
+  <view style='width:750rpx;border-top:4rpx solid #fa9d26'></view>
+  <view class='user-info-item-title'>用户名</view>
+  <input type='text' class='user-info-item-input' data-key="name" bindinput="inputChange"/>
+ 
+  <view class='user-info-item-title'>登录密码</view>
+  <input type='text' class='user-info-item-input' data-key="password" bindinput="inputChange" />
+ 
+
+
+
+
+  
+  <view class='user-info-btn' bindtap="memberLogin">登录</view>
+
+</view>

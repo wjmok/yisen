@@ -1,0 +1,20 @@
+<template name="indexMenuBar">
+  <view class='index-menu'>
+    <block wx:for="{{indexMenuBar}}" wx:key="das">
+      <view class='index-menu-item' data-id="{{item.id}}" data-title="{{item.titles}}" catchtap='intoServiceDetail'>
+        <view class='index-menu-item-img'>
+          <image src='{{item.url}}' />
+        </view>
+        <view class='index-menu-item-text' style='color:{{item.color}}'>{{item.titles}}</view>
+      </view>
+    </block>
+  </view>
+</template>
+
+<!-- <import src="../tpl/index-mebu-bar/index-mebu-bar.wxml" />
+<template is="index-mebu-bar" data="{{indexMenuBar}}" /> -->
+
+<!-- var menuData = require('../../data/index-menu-bar.js');
+'indexMenuBar': menuData.indexMenuBar -->
+
+<!-- /* @import "/pages/tpl/index-menu-bar/index-menu-bar.wxss"; */ -->

@@ -1,0 +1,69 @@
+<import src="../../../wxParse/wxParse.wxml"/>
+<view class="container">
+  <view class='cat-title-img'>
+    <view class='card-id'>No.85452125</view>
+    <image src="{{productData.product.mainImg[0]['url']}}"></image>
+  </view>
+
+  <view class='cat-title'>
+    <view class='cat-title-label'>商品名称</view>
+    <view class='cat-title-info'>{{productData.name}}</view>
+  </view>
+
+
+  <view class='cat-title-box'>
+    <view class='cat-title-box-ico'>服务详情</view>
+    <view class='cat-title-box-box'>
+      <view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-1.jpg"></image>
+        </view>
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          编辑时间：{{productData.create_time}}
+        </view>
+      </view>
+      <view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-2.jpg"></image>
+        </view>
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          ￥{{productData.price}}
+        </view>
+      </view>
+      
+    </view>
+  </view>
+
+
+  <view class='cat-title'>
+    <view class='cat-title-label'>商品介绍</view>
+    <view class='cat-title-info start-ico'>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+    </view>
+  </view>
+  <view wx:if="{{productData.category_id == 2}}" class='cat-title'>
+    <view class='cat-title-label'>收货地址</view>
+    <view class='cat-title-info start-ico'>
+      {{productData.passage1}}
+    </view>
+  </view>
+
+  <view class='cat-content'>
+    <template is="wxParse" data="{{wxParseData:productData.content.nodes}}"/>
+  </view>
+
+  <view style="position:fixed;top:40%;right:0;">
+    <image style="width:60px;height:60px;"  src="/image/ico/wechat-ico.jpg" ></image>
+    <button style="width:60px;height:60px;position:absolute;top:0;opacity:0" open-type="contact"></button>
+    
+  </view>
+
+
+
+  
+
+</view>

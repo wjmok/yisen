@@ -1,0 +1,43 @@
+<view class="container">
+  <view class='index-logo'>
+    <image src="/image/ico/logo.jpg"></image>
+  </view>
+  <view>
+    <import src="../tpls/poster-bar/poster-bar.wxml" />
+    <template is="posterBar" data="{{silderData:sliderData.mainImg,posterBardots:true}}" />
+  </view>
+  <view style="height:250rpx;">
+    <import src="../tpls/index-menu-bar/index-menu-bar.wxml" />
+    <template is="indexMenuBar" data="{{indexMenuBar}}" />
+  </view>
+  <view class='pay-card-title'>
+    》会员卡专区《
+  </view>
+  <view class='index-news-border'>
+    <view class='pay-card-box'>
+      <view class='pay-card-box-title'>{{mainData[0]["name"]}}</view>
+      <view class='pay-card-box-title-item'>
+        
+        <view class='paybtn' data-id="{{mainData[0]['relationinfo']['id']}}" bindtap="buyCard">产品介绍</view>
+        <image src="{{mainData[0]['relationinfo']['product']['mainImg'][0]['url']}}"></image>
+      </view>
+    </view>
+    <view class='pay-card-box'>
+      <view class='pay-card-box-title'>{{mainData[1]["name"]}}</view>
+      <view class='pay-card-box-title-item'>
+        <view class='paybtn' data-id="{{mainData[1]['relationinfo']['id']}}" bindtap="buyCard">产品介绍</view>
+        <image src="{{mainData[1]['relationinfo']['product']['mainImg'][0]['url']}}"></image>
+      </view>
+    </view>
+  </view>
+  
+
+<view style="position:fixed;top:88%;right:0;">
+  <image style="width:60px;height:60px;"  src="/image/ico/wechat-ico.png" ></image>
+  <button style="width:60px;height:60px;position:absolute;top:0;opacity:0" open-type="contact"></button>
+  
+</view>
+
+
+
+</view>

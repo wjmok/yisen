@@ -1,0 +1,68 @@
+<import src="../../../wxParse/wxParse.wxml"/>
+
+<view class="container">
+  <view class='cat-title-img'>
+    <!-- <view class='card-id'>{{mainData.id}}</view> -->
+    <image src="{{mainData.img[0]['url']}}"></image>
+  </view>
+
+  <view class='cat-title'>
+    <view class='cat-title-label'>服务详情</view>
+    <view class='cat-title-info linePorint'>{{mainData.title}}</view>
+  </view>
+
+
+  <view class='cat-title-box' >
+    <view class='cat-title-box-ico'>服务详情</view>
+    <view class='cat-title-box-box'>
+      <view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-1.jpg"></image>
+        </view>
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          编辑时间：{{mainData.create_time}}
+        </view>
+      </view>
+     
+      <view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-3.jpg"></image>
+        </view>
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          分类名称：{{mainData.menu.name}}
+        </view>
+      </view>
+      
+    </view>
+  </view>
+
+
+  <view class='cat-title'>
+    <view class='cat-title-label'>服务内容</view>
+    <view class='cat-title-info start-ico'>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+    </view>
+  </view>
+
+
+  <view class='cat-content ql-editor' style="font-size:14px;">
+    
+    <template is="wxParse" data="{{wxParseData:mainData.content.nodes}}"/>
+  </view>
+
+  <view style="position:fixed;top:40%;right:0;">
+    <image style="width:60px;height:60px;"  src="/image/ico/wechat-ico.jpg" ></image>
+    <button style="width:60px;height:60px;position:absolute;top:0;opacity:0" open-type="contact"></button>
+    
+  </view>
+
+
+
+
+ 
+
+</view>

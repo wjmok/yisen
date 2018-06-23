@@ -1,0 +1,106 @@
+.product-box-menu-box-item-a{
+	height: 370rpx;
+	width: 450rpx;
+	border-radius:15rpx;
+	position: relative;
+	margin: 25rpx 0;
+	
+
+}
+.product-box-menu-box-item{
+	height: 370rpx;
+	width: 450rpx;
+	border-radius:15rpx;
+	position: relative;
+	margin: 0 auto;
+	margin-top:50rpx;
+
+	
+}
+
+
+.product-box-menu-box-item .product-box-menu-box-item-img{
+	width: 450rpx;
+	height: 260rpx;
+	border-radius: 15rpx;
+	border:2rpx solid #ff4081;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0
+}
+.product-box-menu-box-item .cart-id{
+	position: absolute;
+	z-index: 99;
+	left: 45rpx;
+	top: 20rpx;
+	font-size: 20rpx;
+	color: #ff4081
+}
+.product-box-menu-box-item .product-box-menu-box-item-img image{
+	width: 450rpx;
+	height: 280rpx;
+	border-radius: 15rpx;
+}
+.product-box-menu-box-item .product-title-box{
+	height: 105rpx;
+	border-radius: 0 0 15rpx 15rpx;
+	border:2rpx solid #fa9d26;
+	border-top: none;
+	position: absolute;
+	bottom: 0;
+	width: 450rpx;
+	z-index: 9;
+	display: flex;
+	justify-content: space-around
+}
+.product-box-menu-box-item .product-title-box .pro-titles{
+	
+	padding: 0 6rpx;
+	background: #fa9d26;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25rpx;
+	text-align: center;
+	-webkit-line-clamp:1;
+	border-radius: 15rpx;
+	height: 40rpx;
+	line-height: 40rpx; 
+	margin-top: 40rpx
+}
+.product-box-menu-box-item .product-title-box .pro-price{
+	
+	font-size: 25rpx;
+	line-height: 120rpx;
+	text-align: center
+}
+.product-box-menu-box-item .product-title-box .pro-price text{
+	font-size: 35rpx;
+	color: #444;
+	font-weight: bold
+}
+.product-box-menu-box-item .product-title-box .pro-btn{
+	width: 130rpx;
+	border-radius: 15rpx;
+	height: 40rpx;
+	line-height: 40rpx; 
+	margin-top: 40rpx;
+	border: 1rpx solid #fa9d26;
+	font-size: 25rpx;
+	color: #fa9d26;
+	text-align: center;
+}
+
+.origin{
+	animation:'' ;
+}
+
+.origin-a{
+	animation: lefteaseinAnimate 1s ease 1;
+}
+
+
+@keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}

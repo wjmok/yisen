@@ -1,0 +1,10 @@
+<template name="posterBar">
+
+<swiper class='poster-item' indicator-dots="{{posterBardots}}" indicator-color="rgba(0, 0, 0, .1)" indicator-active-color="#999" autoplay="{{true}}" interval="5000" duration="500">
+    <block wx:for="{{silderData}}" wx:key="da" wx:for-index="daa">
+      <swiper-item data-id="{{item.id}}" data-title="{{item.title}}" catchtap='catPageData'>
+        <image src="{{item.url}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</template>

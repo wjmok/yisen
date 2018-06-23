@@ -1,0 +1,17 @@
+<template name="productItem">
+
+<block wx:for="{{productItem}}" wx:key="mk">
+  <view class="product-box-menu-box-item {{cssNameAnimation}}" style="opacity:{{orginOpacity}}"  >
+    <view class="product-box-menu-box-item-img">
+      <image src="{{item['product']['mainImg'][0]['url']}}"></image>
+    </view>
+    <view class="product-title-box">
+      <view class="pro-titles linePorint">{{item.name}}</view>
+      <view class="pro-price">
+        <text>￥</text>{{item.price}}</view>
+      <view class="pro-btn" data-id="{{item.id}}" bindtap="intoGoodsDetail">产品介绍</view>
+    </view>
+  </view>
+</block>
+
+</template>

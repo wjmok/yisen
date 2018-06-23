@@ -1,0 +1,16 @@
+/* pages/personal/user-info/user-info.wxss */
+
+.user-info-item-title{width: 733rpx;font-size: 32rpx;margin-top: 60rpx;margin-bottom: 50rpx;}
+.user-info-item-input{width: 693rpx;height: 80rpx;line-height: 80rpx;border-radius: 3rpx;background-color: rgba(255, 255, 255, 1);font-size: 30rpx;box-shadow: 0rpx 0rpx 6rpx 0rpx rgba(170, 170, 170, 1);font-family: Microsoft Yahei;border: 1px solid rgba(187, 187, 187, 1);color: #999;padding: 0 20rpx;text-align: left;margin:0 auto;
+}
+
+
+
+
+.user-info-btn{width: 700rpx;height: 80rpx;border:1rpx solid #fa9d26;border-radius: 7rpx;color: #fa9d26;text-align: center;line-height: 80rpx;font-size: 30rpx;margin: 0 auto;margin-top:50px;}
+
+.user-info-item-input-select{width: 550rpx;display: flex;justify-content: space-between;}
+.user-info-item-input-select .user-info-item-input-select-item{width: 275rpx;display: flex;justify-content:flex-start;height: 40rpx;line-height: 40rpx;}
+.user-info-item-input-select .user-info-item-input-select-item .select-item-img{width: 60rpx;height: 40rpx;position: relative}
+.user-info-item-input-select .user-info-item-input-select-item .select-item-img image{width: 36rpx;height: 36rpx;position: absolute;left: 0;top: 50%;margin-top: -18rpx;}
+.user-info-item-input-select .user-info-item-input-select-item .select-item-text{font-size: 35rpx;}

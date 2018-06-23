@@ -1,0 +1,28 @@
+/* pages/personal/personal.wxss */
+.personal-title-img{
+	width: 750rpx;
+	height:30%;
+	position: relative
+}
+.personal-title-img .bj-img{width: 750rpx;height: 300rpx;}
+.personal-title-img .personal-title-box{width: 500rpx;height: 216rpx;border-radius: 10rpx;box-shadow: 0px 2px 10px -1px #000;position: absolute;bottom: 25rpx;left: 50%;margin-left: -250rpx;background: #fff}
+.personal-title-img .personal-title-box .user-image{width: 495rpx;height: 102rpx;position: relative;margin: 30rpx 0}
+.personal-title-img .personal-title-box .user-image image{width: 102rpx;height: 102rpx;border-radius: 102rpx;position: absolute;top: 0;left: 50%;margin-left: -51rpx;}
+.personal-title-img .personal-title-box .user-name{width: 495rpx;text-align: center;font-size: 30rpx;height: 40rpx;line-height: 40rpx;color: #3F51B5}
+.personal-item-box{
+
+	width: 733rpx;
+	height: 176rpx;
+	box-shadow: 0px 2px 10px -1px #000;
+	display: flex;
+	justify-content: space-around;
+	margin:0 auto;
+	margin-top:20px;
+
+
+}
+.personal-item-box .personal-item-box-img{width: 153rpx;height: 176rpx;position: relative;}
+.personal-item-box .personal-item-box-img image{width: 100rpx;height: 100rpx;position: absolute;right: 0;top: 50%;margin-top: -50rpx;}
+.personal-item-box .personal-item-box-info{width:253rpx;height: 176rpx;line-height: 176rpx;font-size: 32rpx;text-align: center }
+.personal-item-box .personal-item-box-des{width: 264rpx;height: 176rpx;line-height: 176rpx;font-size: 26rpx;color: #999}
+.personal-item-box .personal-item-box-more{width: 58rpx;height: 176rpx;line-height: 176rpx;font-size: 30rpx;}

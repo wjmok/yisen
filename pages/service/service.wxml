@@ -1,0 +1,8 @@
+<view class="container">
+  <import src="../tpls/list-title/list-title.wxml" />
+  <template is="listTitle" data="{{imgData:sliderData.mainImg[0]['url'],listTitleStyle:2}}" />
+
+  <import src="../tpls/service-item/service-item.wxml" />
+  <template is="serviceItem" data="{{serviceItem:articleArr}}" />
+  
+</view>

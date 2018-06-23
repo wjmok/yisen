@@ -1,0 +1,18 @@
+<template name="listTitle">
+  <!--<view class='index-logo'>
+    <image src="/image/ico/logo.jpg"></image>
+  </view>-->
+  <view class='product-banner-box'>
+    <image  src="{{imgData}}"></image>
+    <view class='product-banner-box-btn'>
+      <block wx:if="{{listTitleStyle==1}}">
+        <view class='product-banner-box-btn-title' style='padding-left: 40rpx;text-align:left;'>16853</view>
+        <view class='product-banner-box-btn-des' style='text-align:right;padding-right: 40rpx;'>人查看过我的服务</view>
+      </block>
+      <block wx:if="{{listTitleStyle==2}}">
+        <view class='product-banner-box-btn-title' style='text-align:right;padding-right: 40rpx;'>用心服务</view>
+        <view class='product-banner-box-btn-des' style='text-align:left;padding-left: 40rpx;'>旅途劳顿，我们</view>
+      </block>
+    </view>
+  </view>
+</template>

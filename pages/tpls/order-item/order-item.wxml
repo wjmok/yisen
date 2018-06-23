@@ -1,0 +1,19 @@
+<template name="orderItem">
+<block wx:for="{{orderData}}" wx:key="id" wx:for-index="idx">
+  <view class='order-box-item-info'>
+    <view class='order-box-item-info-img'>
+    <view class='card-id'>{{item.order_no}}</view>
+      <image src="{{item.item[0]['snap_product']['product']['mainImg'][0]['url']}}"></image>
+    </view>
+    <view class='order-box-item-info-box'>
+      <view class='order-box-item-info-box-title linePorint'>普通会员卡</view>
+      <view class='order-box-item-info-box-price'>
+        <text>￥</text>{{item.total_price}}</view>
+      <view class='order-box-item-info-box-tool'>
+        <view class='tool-btn' data-id="{{item.id}}" bindtap="checkDetail">查看详情</view>
+        <view class='tool-btn' wx:if="{{item.pay_status == 0}}" data-id="{{item.id}}" bindtap="payNow">立即支付</view>
+      </view>
+    </view>
+  </view>
+</block>
+</template>

@@ -1,0 +1,10 @@
+.poster-item {
+  height: 300rpx;
+  width: 750rpx;
+  position: relative;
+}
+
+.poster-item image {
+  height:300rpx;
+  width: 750rpx;
+}

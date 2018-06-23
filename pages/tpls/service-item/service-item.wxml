@@ -1,0 +1,12 @@
+<template name="serviceItem">
+<view class='service-box'>
+    <block wx:for="{{serviceItem}}" wx:key="lo" wx:for-index="okm">
+      <view class="service-box-item {{(okm+1)%2==0?'f-right':'f-left'}}">
+        <view class='service-box-item-img'>
+          <image src="{{item.img[0]['url']}}"></image>
+          <view class='service-box-item-img-btn' data-id="{{item.id}}" bindtap="intoDetail">{{item.title}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>

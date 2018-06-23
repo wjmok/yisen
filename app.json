@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/product",
+    "pages/service/service",
+    "pages/personal/personal",
+    "pages/personal/user-info/user-info",
+    "pages/personal/card-info/card-info",
+    "pages/personal/distribution-login/distribution-login",
+    "pages/personal/distribution-center/distribution-center",
+    "pages/order/order",
+    "pages/order/cat/cat",
+    "pages/product/cat/cat",
+    "pages/product/cat/order-info/order-info",
+    "pages/service/cat/cat",
+    "pages/pay-result/pay-result"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "惠你行",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "#d7d7d7",
+    "position": "bottom",
+    "selectedColor": "#FF9800",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/footer/footer-yu.png",
+        "selectedIconPath": "image/footer/footer-yu-is.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "商品",
+        "iconPath": "image/footer/footer-activice.png",
+        "selectedIconPath": "image/footer/footer-activice-is.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "服务",
+        "iconPath": "image/footer/service.png",
+        "selectedIconPath": "image/footer/service-active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "image/footer/footer-my.png",
+        "selectedIconPath": "image/footer/footer-my-is.png"
+      }
+    ]
+  }
+}

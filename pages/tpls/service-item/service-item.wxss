@@ -1,0 +1,6 @@
+.service-box{width: 750rpx;}
+.service-box .service-box-item{box-shadow: 1rpx 1rpx 20rpx 1rpx #fa9d26;border-radius: 10rpx;width: 350rpx;margin: 25rpx 5rpx;height: auto;padding-bottom: 17rpx; }
+.service-box .service-box-item image{width: 350rpx;height: 205rpx;border-radius:10rpx 10rpx 0 0;vertical-align: middle}
+.service-box .service-box-item .service-box-item-img-btn{background: #fa9d26;color: #fff;width: 200rpx;height: 57rpx;line-height: 57rpx;text-align: center;margin: auto;font-size: 27rpx;margin-top: 17rpx;border-radius: 10rpx;}
+.f-right{float: right}
+.f-left{float: left}

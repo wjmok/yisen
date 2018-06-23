@@ -1,0 +1,29 @@
+<view class="container">
+
+  <import src="../tpls/list-title/list-title.wxml" />
+  <template is="listTitle" data="{{imgData:sliderData.mainImg[0]['url'],listTitleStyle:1}}" />
+
+  <view class='index-menu-border' style='background:#bbb;margin-top:3%;'></view>
+  <view class='product-box'>
+    
+    <view class='product-box-menu'>
+      <block wx:for="{{categoryArr}}" wx:key="id">
+        <view class="product-box-menu-btn {{currentCategoryId==item.id?'select':''}}" data-id="{{item.id}}" bindtap="changeCategory" >
+          {{item.name}}
+        </view>
+      </block>
+    </view>
+    
+    <view class='product-box-menu-box' style="overflow:auto;">
+      <scroll-view scroll-y style="height: 100%;"  bindscrolltolower="lower"  >
+      
+        <!-- product-item -->
+        <import src="../tpls/product-item/product-item.wxml" />
+        <template is="productItem" data="{{productItem:productArray,cssNameAnimation:cssName}}"  />
+
+        <view bindtap="loadMore" style="margin:0 auto;font-size:20rpx;border:1rpx solid #fa9d26;border-radius: 7rpx;color: #fa9d26;text-align: center;width:120rpx;margin-top:150rpx;margin-bottom:50rpx;">加载更多</view>
+      </scroll-view>
+    </view>
+
+  </view>
+</view>

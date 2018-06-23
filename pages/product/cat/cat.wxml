@@ -1,0 +1,125 @@
+
+
+<view class="container">
+  <view class='cat-title-img'>
+    
+    <image src="{{productData.product.mainImg[0]['url']}}"></image>
+  </view>
+
+  <view class='cat-title'>
+    <view class='cat-title-label'>商品名称</view>
+    <view class='cat-title-info'>{{productData.name}}</view>
+  </view>
+
+
+  <view class='cat-title-box' >
+    <view class='cat-title-box-ico'>详情</view>
+    <view class='cat-title-box-box'>
+      <view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-1.jpg"></image>
+        </view>
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          编辑时间：{{productData.create_time}}
+        </view>
+      </view>
+      <view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-2.jpg"></image>
+        </view>
+        
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          原价：￥{{productData.oprice}}
+        </view>
+      </view>
+      <view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-2.jpg"></image>
+        </view>
+        
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          活动价：￥{{productData.price}}
+        </view>
+      </view>
+
+      <!--<view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-3.jpg"></image>
+        </view>
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          创建人：
+        </view>
+      </view>-->
+      <!--<view class='cat-title-box-box-item'>
+        <view class='cat-title-box-box-item-list-img'>
+          <image src="/image/ico/cat-ico-4.jpg"></image>
+        </view>
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          出行天数：33
+        </view>
+      </view>-->
+    </view>
+  </view>
+
+
+  <view class='cat-title'>
+    <view class='cat-title-label'>商品介绍</view>
+    <view class='cat-title-info start-ico'>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+      <image src='/image/ico/start-ico.jpg'></image>
+    </view>
+  </view>
+
+  <view wx:if="{{productData.category_id!=1}}" class='cat-title' style='height:100px'>
+    <view class='cat-title-label'>收货地址</view>
+    <view class='cat-title-info start-ico'>
+    <textarea style="border:1px solid;margin:0 auto;margin-left:30px;height:80px;width:350px;" type="text" placeholder="省/市/区/街道/门牌号" placeholder-style="font-size:15px;opacity:0.5;" bindinput="inputChange"></textarea>
+    </view>
+  </view>
+
+  <view class='cat-content ql-editor' style="font-size:14px;">
+    <import src="../../../wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:productData.product.content.nodes}}"/>
+  </view>
+
+
+
+  <view class='cat-tool-btn'>
+    <view class='cat-tool-left-btn'>
+      <picker class="" bindchange="bindPickerChange" value="{{index}}" range="{{countsArray}}">
+          <!--因为picker对flex支持不好，所以加了一层view-->
+          <view>
+              <text class="counts-tips">数量</text>
+              <text class="counts-data">{{productCounts}}</text>
+              <image src="/image/ico/arrow@down.png"></image>
+          </view>
+      </picker>
+    </view>
+    <view class='cat-tool-right-btn'>
+    <view class='btns' bindtap="checkPhone">立即支付</view>
+    </view>
+  </view>
+
+  <view style="position:fixed;top:40%;right:0;">
+    <image style="width:60px;height:60px;"  src="/image/ico/wechat-ico.jpg" ></image>
+    <button style="width:60px;height:60px;position:absolute;top:0;opacity:0" open-type="contact"></button>
+    
+  </view>
+
+
+
+  <modal 
+    title="补全信息"
+     hidden="{{hiddenModal}}"
+     confirm-text="去补全"
+     cancel-text="残忍拒绝"
+     bindconfirm="toPersonnalInfo"
+     bindcancel="listenerCancel" 
+      >
+     请您补全手机号等个人信息
+  </modal>
+
+</view>

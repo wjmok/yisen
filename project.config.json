@@ -1,0 +1,99 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx01a51043d78371d1",
+	"projectname": "%E6%98%93%E6%A3%AE%E5%95%86%E5%8A%A1",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "商品",
+					"pathName": "pages/product/product",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "商品详情",
+					"pathName": "pages/product/cat/cat",
+					"query": "id=2"
+				},
+				{
+					"id": -1,
+					"name": "服务列表",
+					"pathName": "pages/service/service",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "服务详情",
+					"pathName": "pages/service/cat/cat",
+					"query": "id=373"
+				},
+				{
+					"id": -1,
+					"name": "会员中心",
+					"pathName": "pages/personal/personal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "会员基本信息详情",
+					"pathName": "pages/personal/user-info/user-info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "会员订单详情",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "scene=123",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "分销登录",
+					"pathName": "pages/personal/distribution-login/distribution-login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分销详情",
+					"pathName": "pages/personal/distribution-center/distribution-center",
+					"query": ""
+				}
+			]
+		}
+	}
+}

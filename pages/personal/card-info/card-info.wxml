@@ -1,0 +1,42 @@
+<view class="container">
+  <view style='width:750rpx;border-top:4rpx solid #fa9d26'></view>
+  <view class='user-info-item-title'>真实姓名</view>
+  <input type='number' class='user-info-item-input' />
+  <view class='user-info-item-title'>真实性别</view>
+
+  <view class='user-info-item-input-select'>
+    <view class='user-info-item-input-select-item'>
+      <view class='select-item-img'>
+        <image src="/image/ico/no-select.jpg"></image>
+      </view>
+      <view class='select-item-text'>男</view>
+    </view>
+    <view class='user-info-item-input-select-item'>
+      <view class='select-item-img'>
+        <image src="/image/ico/is-select.jpg"></image>
+      </view>
+      <view class='select-item-text'>女</view>
+    </view>
+  </view>
+
+
+  <view class='user-info-item-title'>手机号码</view>
+  <input type='number' class='user-info-item-input' />
+  <view class='user-info-item-title'>身份证号码</view>
+  <input type='number' class='user-info-item-input' />
+
+
+<!-- 是否为实体会员卡 -->
+    <view class='user-info-item-title'>收货地址</view>
+  <input type='number' class='user-info-item-input' /> 
+
+
+
+  <view class='user-info-border'>
+    <view class='user-i'> </view>
+    <view class='user-i-text'>益森商务 </view>
+    <view class='user-i'> </view>
+  </view>
+  <view class='user-info-btn'>确定支付</view>
+
+</view>

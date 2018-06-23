@@ -1,0 +1,2 @@
+@import "/pages/personal/user-info/user-info.wxss"; 
+.user-info-item-input{text-align: center}

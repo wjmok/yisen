@@ -1,0 +1,13 @@
+<view class="container">
+<view style='width:750rpx;border-top:4rpx solid #fa9d26'></view>
+  <view class='user-info-item-title'>手机号码</view>
+  <input type='number' class='user-info-item-input' data-key="phone" value="{{userInfo.phone}}" bindblur="inputChange"/>
+  <view class='user-info-item-title'>真实姓名</view>
+  <input type='text' class='user-info-item-input' value="{{userInfo.username}}" data-key="username" bindblur="inputChange"/>
+  <view class='user-info-item-title'>身份证号码</view>
+  <input type='idcard' class='user-info-item-input' value="{{userInfo.passage1}}" data-key="passage1" bindblur="inputChange"/>
+  
+  <button class='user-info-btn' open-type="getUserInfo" bindgetuserinfo="submit">保存</button>
+  
+  
+</view>

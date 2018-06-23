@@ -1,0 +1,13 @@
+/* pages/index/index.wxss */
+.index-logo image{width:100%;height: 106rpx;}
+ @import "/pages/tpls/poster-bar/poster-bar.wxss"; 
+ @import "/pages/tpls/index-menu-bar/index-menu-bar.wxss"; 
+.pay-card-title{font-size: 30rpx;line-height: 80rpx;text-align: center;width: 100%;color: #999;}
+.pay-card-box{width: 650rpx;line-height: 72rpx;margin:0 auto;}
+.pay-card-box .pay-card-box-title{width: 650rpx;font-size: 28rpx;line-height: 72rpx;}
+.pay-card-box .pay-card-box-title-item{width: 650rpx;box-shadow: 0 5rpx 5rpx 1rpx #FF9800;border-radius: 15rpx;height: 380rpx;position: relative;margin-bottom: 30rpx;}
+.pay-card-box .pay-card-box-title-item image{width: 650rpx;height: 380rpx;border-radius:15rpx;}
+.pay-card-box .pay-card-box-title-item .paybtn{width: 228rpx;height: 91rpx;border-radius: 91rpx;background: #fff;line-height: 91rpx;text-align: center;font-size: 25rpx;box-shadow: 0rpx 1rpx 1rpx 1rpx #FF9800;position: absolute;z-index: 99;top: 50%;left: 50%;margin-left: -114rpx;margin-top: -45rpx;}
+.pay-card-box .pay-card-box-title-item .card-id-box{color: #D41E85;font-size: 30rpx;width: 608rpx;padding-left: 40rpx;position: absolute;z-index: 99;left: 0;top: 40rpx;font-weight: bold;}
+.pay-card-box .pay-card-box-title-item .pay-vip{position: absolute;left: 71rpx;font-size: 100rpx;font-weight: bold;top: 234rpx;}
+.pay-card-box .pay-card-box-title-item .pay-vip-des{position: absolute;left: 250rpx;font-size: 27rpx;top: 306rpx;}

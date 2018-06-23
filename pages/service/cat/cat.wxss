@@ -1,0 +1,37 @@
+@import "../../../wxParse/wxParse.wxss"; 
+
+
+
+.cat-title-img{width: 750rpx;height: 480rpx;position: relative}
+.cat-title-img image{width: 100%;height: 438rpx;vertical-align: middle}
+.cat-title-img .card-id{position: absolute;z-index: 99;font-size: 27rpx;color: #E01d51;left: 80rpx;top: 80rpx;}
+
+.cat-title{width: 650rpx;height: 64rpx;display: flex;justify-content: space-around;margin:40rpx 0;}
+.cat-title .cat-title-label{font-size: 28rpx;width: 180rpx;height: 64rpx;border-right: 2rpx solid #999;text-align: left;line-height: 64rpx;}
+.cat-title .cat-title-info{width: 430rpx; font-size: 40rpx;line-height: 64rpx;text-align: center;font-weight: bold;-webkit-line-clamp:1}
+.cat-title .start-ico{display: flex;justify-content: center;}
+.cat-title .start-ico image{width: 50rpx;height: 50rpx;margin:7rpx 20rpx;}
+
+
+
+
+.cat-title-box{width: 100%;height:250rpx;position: relative;padding-top: 30rpx;margin:0 auto;}
+.cat-title-box .cat-title-box-ico{width:150rpx;height: 36rpx;background: #fff;color: #999;font-size: 26rpx;position: absolute;line-height: 36rpx; top: 18rpx;left: 60rpx;text-align: center}
+.cat-title-box-box{width: 90%;border:2rpx solid #999;height: 190rpx;padding: 20rpx 10rpx;margin:0 auto;}
+.cat-title-box-box .cat-title-box-box-item{width: 90%;height: 50rpx;display: flex;justify-content: flex-start;margin: 10rpx 0;
+}
+.cat-title-box-box .cat-title-box-box-item .cat-title-box-box-item-list-img{width: 60rpx;height: 50rpx;position: relative}
+.cat-title-box-box .cat-title-box-box-item .cat-title-box-box-item-list-img image{width: 45rpx;height: 45rpx;position: absolute;left: 0;top: 50%;margin-top: -22.5rpx;}
+.cat-title-box-box .cat-title-box-box-item .cat-title-box-box-item-list-titel{width: 80%;padding-right: 10rpx;-webkit-line-clamp:1;font-size: 26rpx;text-align: left;line-height: 50rpx;}
+
+.cat-content{width: 90%;margin:0 auto;
+margin-bottom: 200rpx;}
+
+.cat-tool-btn{width: 750rpx;border-top: 1rpx solid #999;height: 132rpx;position: fixed;bottom: 0;background: #fff;display: flex;justify-content: space-around;}
+
+.cat-tool-btn .cat-tool-left-btn{width: 360rpx;height: 132rpx;display: flex;justify-content: space-around;}
+.cat-tool-btn .cat-tool-left-btn image{width: 43rpx;height: 43rpx;vertical-align: middle;margin: 45.5rpx 30rpx;}
+.cat-tool-btn .cat-tool-left-btn .num{line-height: 132rpx;}
+
+.cat-tool-btn .cat-tool-right-btn{width: 390rpx;height: 132rpx;position: relative}
+.btns{width: 340rpx;height: 70rpx;color: #fff;text-align: center;line-height: 70rpx;background: #ff9800;font-size: 30rpx;font-weight: bold;border-radius: 10rpx;margin-top: 31rpx;box-shadow: 0px 2px 10px -1px #999;}

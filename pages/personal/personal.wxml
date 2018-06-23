@@ -1,0 +1,50 @@
+<view class="container">
+  <view class='personal-title-img'>
+    <image src="{{sliderData.mainImg[0]['url']}}" class='bj-img'></image>
+    <view class='personal-title-box'>
+      <view class='user-image'>
+        <view style="width:120rpx;height:120rpx;border-radius:50%;overflow:hidden;margin:0 auto">
+          <open-data  type="userAvatarUrl"></open-data>
+        </view>
+      </view>
+      <view class='user-name'><span><open-data  type="userNickName" ></open-data></span></view>
+    </view>
+  </view>
+  <view class='index-news-border'></view>
+
+  <view class='personal-item-box'>
+    <view class='personal-item-box-img'>
+      <image src="/image/ico/per-ico-1.png"></image>
+    </view>
+    <view class='personal-item-box-info'>基本信息</view>
+    <view class='personal-item-box-des' >绑定、变更信息</view>
+    <view class='personal-item-box-more' bindtap="userInfoEdit">></view>
+  </view>
+
+  <view class='personal-item-box'>
+    <view class='personal-item-box-img'>
+      <image src="/image/ico/per-ico-2.png"></image>
+    </view>
+    <view class='personal-item-box-info'>我的订单</view>
+    <view class='personal-item-box-des'>查看，编辑订单信息</view>
+    <view class='personal-item-box-more' bindtap="orderHandle">></view>
+  </view>
+
+
+   <view class='personal-item-box'>
+    <view class='personal-item-box-img'>
+      <image src="/image/ico/per-ico-3.png"></image>
+    </view>
+    <view class='personal-item-box-info'>分销中心</view>
+    <view class='personal-item-box-des'>销售员有分销权限</view>
+    <view class='personal-item-box-more' bindtap="distriCenter">></view>
+  </view>
+
+  <view style="position:fixed;top:88%;right:0;">
+    <image style="width:60px;height:60px;"  src="/image/ico/wechat-ico.png" ></image>
+    <button style="width:60px;height:60px;position:absolute;top:0;opacity:0" open-type="contact"></button>
+    
+  </view>
+
+
+</view>

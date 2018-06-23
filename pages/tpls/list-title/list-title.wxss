@@ -1,0 +1,6 @@
+.index-logo image{width: 750rpx;height: 106rpx;}
+.product-banner-box{width: 750rpx;height: 30%;position: relative}
+.product-banner-box image{width: 750rpx;height:300rpx;}
+.product-banner-box .product-banner-box-btn{position: absolute;    box-shadow: 0px 2px 10px -1px #eee;bottom:0;width: 518rpx;height: 100rpx;background: rgba(0,0,0,0.5);color: #fff;border-radius: 100rpx;left: 50%;margin-left: -259rpx;}
+.product-banner-box .product-banner-box-btn .product-banner-box-btn-title{font-size: 38rpx;font-weight: bold;width: 487rpx;margin-top: 10rpx}
+.product-banner-box .product-banner-box-btn .product-banner-box-btn-des{font-size: 27rpx;width: 487rpx;}

@@ -1,0 +1,27 @@
+<view class="container">
+  <view class='order-title-menu'>
+    <view class='order-title-menu-box'>
+      <view class="order-title-menu-box-item {{searchItem.pay_status == 1?'select':''}}" data-status="1" bindtap="changeStatus">
+        已支付
+      </view>
+      <view class="order-title-menu-box-item {{searchItem.pay_status == 0?'select':''}}" data-status="0" bindtap="changeStatus">
+        未支付
+      </view>
+    </view>
+  </view>
+  <view class='order-title-menu-border'>
+    <view class='order-title-menu-border-box'>
+      <view class="order-title-menu-border-box-item {{searchItem.pay_status == 1?'select':''}}">
+      </view>
+      <view class="order-title-menu-border-box-item {{searchItem.pay_status == 0?'select':''}}">
+      </view>
+    </view>
+  </view>
+  <view class='order-bottom-bj'></view>
+  <import src="../tpls/order-item/order-item.wxml" />
+
+  <template is="orderItem" data="{{orderData:mainData}}" />
+
+
+  <view bindtap="loadMore" style="margin:0 auto;font-size:20rpx;border:1rpx solid #fa9d26;border-radius: 7rpx;color: #fa9d26;text-align: center;width:150rpx;margin-top:80rpx">加载更多</view>
+</view>
