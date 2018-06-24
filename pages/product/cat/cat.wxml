@@ -28,7 +28,7 @@
           <image src="/image/ico/cat-ico-2.jpg"></image>
         </view>
         
-        <view class='cat-title-box-box-item-list-titel linePorint'>
+        <view class='cat-title-box-box-item-list-titel linePorint' style="text-decoration:line-through;color:#fa9d26">
           原价：￥{{productData.oprice}}
         </view>
       </view>
@@ -37,7 +37,7 @@
           <image src="/image/ico/cat-ico-2.jpg"></image>
         </view>
         
-        <view class='cat-title-box-box-item-list-titel linePorint'>
+        <view class='cat-title-box-box-item-list-titel linePorint' style="color:#fa9d26">
           活动价：￥{{productData.price}}
         </view>
       </view>

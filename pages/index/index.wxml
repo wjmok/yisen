@@ -11,7 +11,7 @@
     <template is="indexMenuBar" data="{{indexMenuBar}}" />
   </view>
   <view class='pay-card-title'>
-    》会员卡专区《
+    会员卡专区
   </view>
   <view class='index-news-border'>
     <view class='pay-card-box'>

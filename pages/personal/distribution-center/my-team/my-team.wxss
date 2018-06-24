@@ -1,0 +1,14 @@
+/* pages/personal/distribution-center/my-team.wxss */
+.order-title-menu{width: 750rpx;border-top: 1rpx solid #bbb;background: #f8f8f8;display: flex;justify-content: center}
+.order-title-menu .order-title-menu-box{width: 490rpx;display: flex;justify-content: space-between;}
+.order-title-menu .order-title-menu-box .order-title-menu-box-item{width: 200rpx;height: 100rpx;text-align: center;line-height: 100rpx;font-size: 27rpx;}
+.order-title-menu .order-title-menu-box .select{color: #ff9d00}
+
+.order-title-menu-border{width: 750rpx;background: #fff;display: flex;justify-content: center}
+.order-title-menu-border .order-title-menu-border-box{width: 490rpx;display: flex;justify-content: space-between;}
+.order-title-menu-border .order-title-menu-border-box .order-title-menu-border-box-item{width: 200rpx;height: 4rpx;text-align: center;}
+.order-title-menu-border .order-title-menu-border-box .select{background: #ff9d00}
+
+.order-bottom-bj{height: 67rpx;border-top: 2rpx solid #bbb;border-bottom: 2rpx solid #bbb;background: #fefefe;width: 750rpx}
+
+@import "/pages/tpls/order-item/order-item.wxss"; 

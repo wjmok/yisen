@@ -8,6 +8,8 @@
     "pages/personal/card-info/card-info",
     "pages/personal/distribution-login/distribution-login",
     "pages/personal/distribution-center/distribution-center",
+    "pages/personal/distribution-center/my-team/my-team",
+    "pages/personal/distribution-center/team-order/team-order",
     "pages/order/order",
     "pages/order/cat/cat",
     "pages/product/cat/cat",

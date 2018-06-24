@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
 	"appid": "wx01a51043d78371d1",
-	"projectname": "%E6%98%93%E6%A3%AE%E5%95%86%E5%8A%A1",
+	"projectname": "%E7%9B%8A%E6%A3%AE%E5%95%86%E5%8A%A1",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -91,6 +91,18 @@
 					"id": -1,
 					"name": "分销详情",
 					"pathName": "pages/personal/distribution-center/distribution-center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的团队",
+					"pathName": "pages/personal/distribution-center/my-team/my-team",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "团队订单",
+					"pathName": "pages/personal/distribution-center/team-order/team-order",
 					"query": ""
 				}
 			]
