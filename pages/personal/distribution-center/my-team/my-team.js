@@ -7,10 +7,7 @@ Page({
    */
   data: {
     mainData:[],
-    sForm:{
-      name:'',
-      password:'111',
-    },
+    
     paginate: {
       currentPage: 1,
       pagesize:10,
@@ -24,38 +21,47 @@ Page({
 
   onLoad: function (option) {
     const self = this;
-    self.getTeamList();
+    if(wx.getStorageSync("memberInfo").name&&wx.getStorageSync("memberInfo").password){
+      self.getTeamList();
+    }else{
+      api.loginOut()
+    };
+    
    
   },
 
-  loadData(){
-    const self = this;
-    self.getTeamList();
-  },
 
   loadMore(){
     const self = this;
-    self.data.paginate.currentPage++;
-    self.loadData();
+    if(!self.data.isLoadAll){
+      self.data.paginate.currentPage++;
+      self.getTeamList();
+    }
   },
 
 
  
 
-  getTeamList(){
+  getTeamList(isNew){
     const self =this;
+    if(isNew){
+      self.data.mainData = [];
+      self.data.paginate.currentPage = 1;
+    };
     const postData = api.cloneForm(self.data.paginate);
     postData.name = wx.getStorageSync("memberInfo").name;
-    postData.password = api.cloneForm(self.data.sForm).password;
-    const callback = (data)=>{
-      console.log(data);
-      self.data.mainData = data;
+    postData.password = wx.getStorageSync("memberInfo").password;
+    const callback = (res)=>{
+      if(res.data.length>0){
+        self.data.mainData.push.apply(self.data.mainData,res.data);
+      }else{
+        self.data.isLoadAll = true;
+        api.showToast('没有更多了','fail');
+      };
       self.setData({
-        mainData:self.data.mainData,
-      });
-
+        web_mainData:self.data.mainData,
+      }); 
     };
-
     api.getTeamList(postData,callback);
 
   },

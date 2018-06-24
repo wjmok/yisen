@@ -100,6 +100,7 @@ Page({
           });
 
         }else{
+          data.password = self.data.sForm.password;
           wx.setStorageSync('memberInfo', data);
           self.intoDistriInfo();
 

@@ -137,6 +137,46 @@ class Base {
         console.log(pass);
     };
 
+    pathTo(path,type){
+
+        if(type=='nav'){
+            wx.navigateTo({
+                url:path
+            });
+        }else if(type=='tab'){
+            wx.switchTab({
+                url:path
+            });
+        }else if(type=='redi'){
+            wx.redirectTo({
+                url:path
+            });
+        }else if(type=='rela'){
+            wx.reLaunch({
+                url:path
+            });
+        }
+    };
+
+
+    loginOut(){
+
+        wx.removeStorageSync('memberInfo');
+        this.pathTo('/pages/personal/personal','redi')
+        
+    };
+
+    showToast(title,type,func){
+        wx.showToast({
+            title:title,
+            icon:type,
+            duration:1000,
+            mask:true,
+            complete:func
+        })
+    };
+    
+
 };
 
 export {Base};

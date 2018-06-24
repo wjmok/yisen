@@ -2,9 +2,9 @@
   <!--<view class='index-logo'>
     <image src="/image/ico/logo.jpg"></image>
   </view>-->
-  <view class='product-banner-box'>
+  <view class='product-banner-box' >
     <image  src="{{imgData}}"></image>
-    <view class='product-banner-box-btn'>
+    <view class='product-banner-box-btn' wx:if="{{listTitleStyle==2}}">
 
       <block wx:if="{{listTitleStyle==2}}">
         <view class='product-banner-box-btn-title' style='text-align:right;padding-right: 40rpx;'>用心服务</view>

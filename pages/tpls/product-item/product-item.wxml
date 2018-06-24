@@ -1,16 +1,24 @@
 <template name="productItem">
 
 <block wx:for="{{productItem}}" wx:key="mk">
-  <view class="product-box-menu-box-item {{cssNameAnimation}}" style="opacity:{{orginOpacity}}"  >
-    <view class="product-box-menu-box-item-img">
-      <image src="{{item['product']['mainImg'][0]['url']}}"></image>
+  <view class="product-box-menu-box-item {{cssNameAnimation}}" style="opacity:{{orginOpacity}};border:1px solid #fa9d26;font-size:12px" data-id="{{item.id}}" bindtap="intoGoodsDetail" >
+    <view>
+      <image style="width:450rpx;height:280rpx;" src="{{item['product']['mainImg'][0]['url']}}"></image>
     </view>
-    <view class="product-title-box">
+    <view style="display:flex;justify-content:center;">
       <view class="pro-titles linePorint">{{item.name}}</view>
-      <view class="pro-price">
-        <text>￥</text>{{item.price}}</view>
-      <view class="pro-btn" data-id="{{item.id}}" bindtap="intoGoodsDetail">产品介绍</view>
+      
     </view>
+    <view style="display:flex;height:50rpx;line-height:50rpx;justify-content:center;">
+      <view>
+        <text>原价￥</text>{{item.price}}
+      </view>
+      <view style="margin-left:20rpx;">
+        <text>现价￥</text>{{item.price}}
+      </view>
+     
+    </view>
+
   </view>
 </block>
 

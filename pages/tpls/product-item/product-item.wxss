@@ -13,13 +13,13 @@
 	border-radius:15rpx;
 	position: relative;
 	margin: 0 auto;
-	margin-top:50rpx;
+	margin-bottom:50rpx;
 
 	
 }
 
 
-.product-box-menu-box-item .product-box-menu-box-item-img{
+ .product-box-menu-box-item-img{
 	width: 450rpx;
 	height: 260rpx;
 	border-radius: 15rpx;
@@ -29,7 +29,7 @@
 	top: 0;
 	left: 0
 }
-.product-box-menu-box-item .cart-id{
+ .cart-id{
 	position: absolute;
 	z-index: 99;
 	left: 45rpx;
@@ -37,12 +37,12 @@
 	font-size: 20rpx;
 	color: #ff4081
 }
-.product-box-menu-box-item .product-box-menu-box-item-img image{
+ .product-box-menu-box-item-img image{
 	width: 450rpx;
 	height: 280rpx;
 	border-radius: 15rpx;
 }
-.product-box-menu-box-item .product-title-box{
+ .product-title-box{
 	height: 105rpx;
 	border-radius: 0 0 15rpx 15rpx;
 	border:2rpx solid #fa9d26;
@@ -54,7 +54,7 @@
 	display: flex;
 	justify-content: space-around
 }
-.product-box-menu-box-item .product-title-box .pro-titles{
+  .pro-titles{
 	
 	padding: 0 6rpx;
 	background: #fa9d26;
@@ -66,25 +66,24 @@
 	border-radius: 15rpx;
 	height: 40rpx;
 	line-height: 40rpx; 
-	margin-top: 40rpx
-}
-.product-box-menu-box-item .product-title-box .pro-price{
+	}
+  .pro-price{
 	
 	font-size: 25rpx;
 	line-height: 120rpx;
 	text-align: center
 }
-.product-box-menu-box-item .product-title-box .pro-price text{
+  .pro-price text{
 	font-size: 35rpx;
 	color: #444;
 	font-weight: bold
 }
-.product-box-menu-box-item .product-title-box .pro-btn{
+  .pro-btn{
 	width: 130rpx;
 	border-radius: 15rpx;
-	height: 40rpx;
-	line-height: 40rpx; 
-	margin-top: 40rpx;
+	height: 35rpx;
+	line-height: 36rpx; 
+	
 	border: 1rpx solid #fa9d26;
 	font-size: 25rpx;
 	color: #fa9d26;

@@ -3,7 +3,7 @@
   <import src="../tpls/list-title/list-title.wxml" />
   <template is="listTitle" data="{{imgData:sliderData.mainImg[0]['url'],listTitleStyle:1}}" />
 
-  <view class='index-menu-border' style='background:#bbb;margin-top:3%;'></view>
+ 
   <view class='product-box'>
     
     <view class='product-box-menu'>
