@@ -11,10 +11,10 @@
     </view>
     <view style="display:flex;height:50rpx;line-height:50rpx;justify-content:center;">
       <view>
-        <text>原价￥</text>{{item.price}}
+        <text >原价￥</text><text style="text-decoration:line-through">{{item.oprice}}</text>
       </view>
-      <view style="margin-left:20rpx;">
-        <text>现价￥</text>{{item.price}}
+      <view style="margin-left:40rpx;">
+        <text style="color:#fa9d26">活动价￥{{item.price}}</text>
       </view>
      
     </view>

@@ -52,6 +52,7 @@ Page({
     postData.name = wx.getStorageSync("memberInfo").name;
     postData.password = wx.getStorageSync("memberInfo").password;
     const callback = (res)=>{
+      console.log(res)
       if(res.data.length>0){
         self.data.mainData.push.apply(self.data.mainData,res.data);
       }else{
@@ -67,6 +68,7 @@ Page({
   },
 
 
+  
 
 
 

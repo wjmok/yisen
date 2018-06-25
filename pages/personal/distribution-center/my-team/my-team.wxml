@@ -1,5 +1,10 @@
 <!--pages/personal/distribution-center/my-team.wxml-->
 <view class="container">
+
+	<view class="order-title-menu-box " style="width:100%;font-size:14px;background:#fa9d26;color:#fff;text-align:center">
+      总推广人数:{{web_mainData.length}}人
+    </view>
+
  <view class='order-title-menu'>
     <view class='order-title-menu-box' style="width:100%">
       <view class="order-title-menu-box-item " style="width:25%">

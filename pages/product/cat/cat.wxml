@@ -28,8 +28,8 @@
           <image src="/image/ico/cat-ico-2.jpg"></image>
         </view>
         
-        <view class='cat-title-box-box-item-list-titel linePorint' style="text-decoration:line-through;color:#fa9d26">
-          原价：￥{{productData.oprice}}
+        <view class='cat-title-box-box-item-list-titel linePorint'>
+          <text >原价:￥</text><text style="text-decoration:line-through">{{productData.oprice}}</text>
         </view>
       </view>
       <view class='cat-title-box-box-item'>
