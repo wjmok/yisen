@@ -62,6 +62,7 @@ Page({
       };
       self.setData({
         web_mainData:self.data.mainData,
+        web_mainData_total:res.total,
       }); 
     };
     api.getTeamOrder(postData,callback);

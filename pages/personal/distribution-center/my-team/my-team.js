@@ -7,7 +7,7 @@ Page({
    */
   data: {
     mainData:[],
-    
+   
     paginate: {
       currentPage: 1,
       pagesize:10,
@@ -46,6 +46,7 @@ Page({
     const self =this;
     if(isNew){
       self.data.mainData = [];
+      
       self.data.paginate.currentPage = 1;
     };
     const postData = api.cloneForm(self.data.paginate);
@@ -61,7 +62,9 @@ Page({
       };
       self.setData({
         web_mainData:self.data.mainData,
+        web_mainData_total:res.total,
       }); 
+        
     };
     api.getTeamList(postData,callback);
 

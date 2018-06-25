@@ -12,32 +12,32 @@
   </view>
   <view class='index-news-border'></view>
 
-  <view class='personal-item-box'>
+  <view class='personal-item-box 'bindtap="userInfoEdit">
     <view class='personal-item-box-img'>
       <image src="/image/ico/per-ico-1.png"></image>
     </view>
     <view class='personal-item-box-info'>基本信息</view>
     <view class='personal-item-box-des' >绑定、变更信息</view>
-    <view class='personal-item-box-more' bindtap="userInfoEdit">></view>
+    <view class='personal-item-box-more' >></view>
   </view>
 
-  <view class='personal-item-box'>
+  <view class='personal-item-box' bindtap="orderHandle">
     <view class='personal-item-box-img'>
       <image src="/image/ico/per-ico-2.png"></image>
     </view>
     <view class='personal-item-box-info'>我的订单</view>
     <view class='personal-item-box-des'>查看，编辑订单信息</view>
-    <view class='personal-item-box-more' bindtap="orderHandle">></view>
+    <view class='personal-item-box-more' >></view>
   </view>
 
 
-   <view class='personal-item-box'>
+   <view class='personal-item-box' bindtap="distriCenter">
     <view class='personal-item-box-img'>
       <image src="/image/ico/per-ico-3.png"></image>
     </view>
-    <view class='personal-item-box-info'>分销中心</view>
+    <view class='personal-item-box-info'>员工通道</view>
     <view class='personal-item-box-des'>销售员有分销权限</view>
-    <view class='personal-item-box-more' bindtap="distriCenter">></view>
+    <view class='personal-item-box-more' >></view>
   </view>
 
   <view style="position:fixed;top:88%;right:0;">
